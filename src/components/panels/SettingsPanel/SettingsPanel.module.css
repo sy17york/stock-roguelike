@@ -1,0 +1,56 @@
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 12px;
+  margin-bottom: 6px;
+  background: var(--color-panel-2);
+}
+
+.label {
+  color: var(--color-label);
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.line {
+  border: 0;
+  border-top: 1px dashed var(--color-border-dim);
+  margin: 14px 0;
+}
+
+.importBox {
+  flex: 1;
+  display: flex;
+  gap: 8px;
+  min-width: 0;
+}
+
+.field {
+  flex: 1;
+  min-width: 0;
+  padding: 8px 10px;
+  background: var(--color-bg);
+  border: var(--border) solid var(--color-border-dim);
+  color: var(--color-text);
+  font: inherit;
+}
+
+.field:focus {
+  outline: none;
+  border-color: var(--color-border);
+}
+
+.confirmActions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}

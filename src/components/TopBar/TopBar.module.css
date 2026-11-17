@@ -1,0 +1,80 @@
+.bar {
+  height: var(--topbar-h);
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px 12px;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0 20px;
+  background: var(--color-panel);
+  border: var(--border) solid var(--color-border);
+  box-shadow: inset 0 0 0 3px var(--color-bg), inset 0 0 0 4px var(--color-border-dim);
+}
+
+.day {
+  font-size: 34px;
+  font-weight: bold;
+  color: var(--color-accent);
+  white-space: nowrap;
+}
+
+.nav {
+  display: flex;
+  gap: 8px;
+}
+
+.button {
+  position: relative;
+  padding: 8px 14px;
+  background: transparent;
+  border: var(--border) solid transparent;
+  color: var(--color-text);
+}
+
+.button:hover {
+  border-color: var(--color-border);
+  color: var(--color-accent);
+}
+
+/* Red dot in the corner of a button */
+.dot::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--color-danger);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--color-label);
+}
+
+.value {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.cash {
+  color: var(--color-cash);
+}
+
+.assets {
+  color: var(--color-assets);
+}

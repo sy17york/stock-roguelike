@@ -1,0 +1,30 @@
+.group {
+  margin-bottom: 14px;
+}
+
+.title {
+  margin: 0 0 6px;
+  padding: 6px 12px;
+  font-size: 15px;
+  color: var(--color-accent);
+  background: rgba(0, 0, 0, 0.25);
+  border-left: 3px solid var(--color-border-dim);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 8px 12px;
+  margin-bottom: 4px;
+  background: var(--color-panel-2);
+}
+
+.label {
+  color: var(--color-label);
+  font-size: 13px;
+}
+
+.value {
+  font-weight: bold;
+}

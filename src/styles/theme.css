@@ -1,0 +1,80 @@
+/* Global theme. Colors, fonts and sizes live in variables: change the look here only. */
+
+:root {
+  --color-bg: #0d0b09;
+  --color-panel: #17130f;
+  --color-panel-2: #211a13;
+  --color-border: #c8963c;
+  --color-border-dim: #6b4f22;
+  --color-text: #e9dcc3;
+  --color-muted: #9a8a6c;
+  --color-accent: #f0a030;
+  --color-cash: #4cc66a;
+  --color-assets: #3ea6ee;
+  --color-label: #3fbf9f;
+  --color-danger: #e04040;
+
+  /* Price colors. Switched by data-color-scheme on <html>. */
+  --color-up: #38b764;
+  --color-down: #d2455a;
+
+  /* Swap in a pixel font here later (e.g. Silkscreen + Fusion Pixel). */
+  --font-ui: 'Courier New', 'Microsoft YaHei', 'PingFang SC', monospace;
+
+  --topbar-h: 84px;
+  --border: 2px;
+}
+
+:root[data-color-scheme='redUp'] {
+  --color-up: #d2455a;
+  --color-down: #38b764;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-ui);
+  overflow: hidden;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Shared button style. Use className="btn" (add "btn-accent" for the main action). */
+.btn {
+  padding: 8px 16px;
+  background: transparent;
+  border: var(--border) solid var(--color-border-dim);
+  color: var(--color-text);
+}
+
+.btn:hover:not(:disabled) {
+  border-color: var(--color-border);
+  color: var(--color-accent);
+}
+
+.btn-accent {
+  border-color: var(--color-border);
+  color: var(--color-accent);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
