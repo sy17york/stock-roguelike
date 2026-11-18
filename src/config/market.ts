@@ -21,11 +21,11 @@ export type IndustryId = (typeof INDUSTRIES)[number]
 
 export const MARKET = {
   // Salt for the anonymous id hash. Change it before release and keep it private.
-  anonIdSalt: 'change-me-before-release',
+  anonIdSalt: '4oah3yjwef0ribvx5tp9ns8z',
 
   // Salt for the start price of each segment. Changing it changes every price in every
   // existing save, so treat it like a data version bump.
-  priceSalt: 'change-me-before-release-too',
+  priceSalt: 'yak7q8vuf59zg1lipbsdt34r',
 
   // Every segment is rescaled so the close on the first visible day lands in this range.
   // The landing point is derived from (stockId, startIndex), so it is the same on every load.
